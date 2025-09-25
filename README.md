@@ -1,6 +1,6 @@
 # Agent Demo Monorepo
 
-This repository hosts both the FastAPI backend and the Vite + React front-end for the agent scheduling demo.
+This repository hosts both the FastAPI backend and the Vite + React front-end for the agent scheduling demo. Python 3.12.10 + Node v22.15.0.
 
 ## Directory layout
 
