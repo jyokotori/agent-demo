@@ -1,4 +1,7 @@
-export const API_BASE_URL = 'http://127.0.0.1:8000';
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL ?? '';
+const normalizedBaseUrl = rawBaseUrl.endsWith('/') ? rawBaseUrl.slice(0, -1) : rawBaseUrl;
+
+export const API_BASE_URL = normalizedBaseUrl;
 
 export const API_ENDPOINTS = {
   chatStream: `${API_BASE_URL}/api/agent/chat/stream`,
